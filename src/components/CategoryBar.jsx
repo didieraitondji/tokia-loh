@@ -29,7 +29,7 @@ const CategoryBar = ({ onSelect }) => {
     };
 
     return (
-        <div className="flex gap-3 overflow-x-auto px-4 m-4 bg-white">
+        <div className="flex gap-3 overflow-x-auto px-4 m-4 py-5 bg-white">
             {categories.map((cat) => (
                 <button
                     key={cat}
