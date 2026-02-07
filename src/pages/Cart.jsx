@@ -12,7 +12,7 @@ const Cart = () => {
         <div className="min-h-screen bg-white">
             <Header />
 
-            <main>
+            <main className="p-4 pb-20">
                 {cart.length === 0 ? (
                     <div className="grid items-center justify-center h-[60vh]"><br />
                         <img src="/src/assets/logo/logo_1.png" alt="Tokia Loh" className="w-32 h-32" /> <br />

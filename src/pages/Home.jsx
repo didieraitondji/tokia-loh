@@ -44,7 +44,7 @@ const Home = () => {
 
             <CategoryBar onSelect={setSelectedCategory} />
 
-            <main className="p-4 overflow-auto">
+            <main className="p-4 overflow-auto pb-20">
                 <p className="text-sm text-gray-600">
                     Catégorie sélectionnée :{" "}
                     <span className="font-semibold text-sky-500">

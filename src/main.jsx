@@ -6,6 +6,7 @@ import Categories from './pages/Categories.jsx'
 import Cart from './pages/Cart.jsx'
 import Account from './pages/Account.jsx'
 import Checkout from './pages/Checkout.jsx'
+import NotFound from './pages/NotFound.jsx'
 import { CartProvider } from "./context/CartContext";
 
 createRoot(document.getElementById('root')).render(
@@ -25,6 +26,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/account" element={<Account />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

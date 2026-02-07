@@ -15,7 +15,7 @@ export default function Categories() {
             </header>
             <hr />
 
-            <main className="p-4 overflow-auto">
+            <main className="p-4 overflow-auto pb-20">
                 <p className="text-sm text-gray-600">
                     Catégories de produits à venir...
                 </p>

@@ -5,7 +5,6 @@ const CartContext = createContext();
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
 
-    // Ajouter un article (ou augmenter la quantité)
     const addToCart = (product) => {
         setCart((prevCart) => {
             const existing = prevCart.find(
@@ -24,7 +23,6 @@ export const CartProvider = ({ children }) => {
         });
     };
 
-    // Calcul du total
     const totalPrice = cart.reduce(
         (total, item) => total + item.price * item.quantity,
         0

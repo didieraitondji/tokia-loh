@@ -52,7 +52,7 @@ const Checkout = () => {
     return (
         <div>
             <Header />
-            <main className="p-4">
+            <main className="p-4 pb-20">
 
                 {cart.length === 0 ? (
                     <div className="grid items-center justify-center h-[60vh]"><br />
@@ -79,7 +79,7 @@ const Checkout = () => {
                             Total : {totalPrice}F
                         </p>
 
-                        {/* Note de commande */}
+                        
                         <textarea
                             placeholder="Note de commande..."
                             className="w-full border rounded p-2 mt-4"
