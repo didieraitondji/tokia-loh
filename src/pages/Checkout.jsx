@@ -38,6 +38,10 @@ const Checkout = () => {
         )
             .then((response) => {
                 alert('Email de confirmation envoyé avec succès!');
+                // actualisation de la page
+                window.location.reload();
+                // redirection vers la page d'accueil après l'envoi de l'email
+                window.location.href = "/";
             })
             .catch((error) => {
                 console.error('Erreur:', error);
