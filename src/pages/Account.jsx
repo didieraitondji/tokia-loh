@@ -1,28 +1,31 @@
-import React from 'react'
-import SidebarMenu from "../components/SidebarMenu";
-import BottomNav from "../components/BottomNav";
-import "../index.css";
-
-export default function Account() {
+const Account = () => {
     return (
-        <div className="min-h-screen bg-white">
+        <div className="p-4">
+            <h2 className="text-lg font-semibold mb-4">
+                Mon TOKIA-LOH
+            </h2>
 
-            <header className="flex items-center p-4 shadow-sm">
-                <SidebarMenu />
-                <h1 className="ml-4 text-lg font-semibold text-sky-400">
-                    TOKIA-LOH
-                </h1>
-            </header>
-            <hr />
+            <input
+                type="text"
+                placeholder="Nom et Prénom"
+                className="w-full border p-2 mb-3"
+            />
+            <input
+                type="text"
+                placeholder="Ville"
+                className="w-full border p-2 mb-3"
+            />
+            <input
+                type="tel"
+                placeholder="Numéro de téléphone"
+                className="w-full border p-2 mb-3"
+            />
 
-
-            <main className="p-4 overflow-auto">
-                <p className="text-sm text-gray-600">
-                    Page de compte utilisateur à venir...
-                </p>
-            </main>
-
-            <BottomNav />
+            <button className="w-full bg-violet-500 text-white py-2 rounded">
+                Enregistrer
+            </button>
         </div>
-    )
-}
+    );
+};
+
+export default Account;

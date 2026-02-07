@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import SidebarMenu from "../components/SidebarMenu";
 import CategoryBar from "../components/CategoryBar";
 import BottomNav from "../components/BottomNav";
+import Header from "../components/Header";
 import { products } from "../data/products";
 import ProductCard from "../components/ProductCard";
 import "../index.css";
@@ -40,17 +40,9 @@ const Home = () => {
     return (
         <div className="min-h-screen bg-white">
 
-            <header className="flex items-center p-4 shadow-sm">
-                <SidebarMenu />
-                <h1 className="ml-4 text-lg font-semibold text-sky-400">
-                    TOKIA-LOH
-                </h1>
-            </header>
-            <hr />
+            <Header />
 
-            <div>
-                <CategoryBar onSelect={setSelectedCategory} />
-            </div>
+            <CategoryBar onSelect={setSelectedCategory} />
 
             <main className="p-4 overflow-auto">
                 <p className="text-sm text-gray-600">
